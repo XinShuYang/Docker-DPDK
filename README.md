@@ -5,11 +5,11 @@ First, make sure your DPDK examples can run on the host machine.
 UIO driver binding and hugepage memory setting must be finished before building the container.
 
 1)Host setting:  
-'''bash
+```bash
 git clone https://github.com/XinShuYang/Docker-DPDK.git  
 cd Docker-DPDK  
 sudo ./host_setup.sh. 
-''' 
+``` 
 
 2)Build your docker image from the Dockerfile:  
 sudo docker build -t docker-dpdk .  
