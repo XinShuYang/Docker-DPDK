@@ -1,6 +1,6 @@
 # Docker-DPDK
 The basic idea to build DPDK in docker is sharing host's devices and memory with the container.  
-If you want to use multiple dpdk containers with vhost driver, there is an official solution on https://doc.dpdk.org/guides-18.08/howto/virtio_user_for_container_networking.html.  
+If you want to build dpdk containers with vhost driver, there is an official solution on https://doc.dpdk.org/guides-18.08/howto/virtio_user_for_container_networking.html.  
 
 First, make sure your DPDK examples can run on the host machine.  
 
