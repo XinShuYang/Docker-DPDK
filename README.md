@@ -43,7 +43,7 @@ or
 ```bash
 ./l2fwd.sh 
 ```   
-In the test environment(cloudlab 220g2), I use dpdk-pktgen to send packages on node0. A DPDK l2fwd example can running in the docker container on node1 and forward packages.  
+In the test environment(cloudlab 220g2), I use dpdk-pktgen to send packages on node0. A DPDK l2fwd example can running in the docker container on node1 and forward packages.(It seems that one container will monopolize DPDK.)  
 
 
 ![image](/l2.png)
