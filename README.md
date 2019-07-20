@@ -17,9 +17,13 @@ cd Docker-DPDK
 sudo ./host_setup.sh 
 ``` 
 
-2)Build your docker image from the Dockerfile:  
+2)Build your docker image from the Dockerfile or DockerHub:  
 ```bash
 sudo docker build -t docker-dpdk .  
+```  
+or  
+```bash
+sudo docker run -it gavinxin/dockerdpdk
 ```  
 
 3)Build and run your container from this image:  
