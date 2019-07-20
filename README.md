@@ -40,3 +40,7 @@ or
 ./l2fwd.sh 
 ```   
 In the test environment, I use pktgen to send packages on node0. A DPDK l2fwd example can running in the docker container on node1 and forward packages.  
+
+```
+![alt](l2.png)
+```
