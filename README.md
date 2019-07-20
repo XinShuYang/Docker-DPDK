@@ -10,8 +10,6 @@ In the test environment, there are two NICs bound to the igb_uio driver (contain
 You can use other version DPDK above 17.08  
 In DPDK19.05, if you choose to use x86_64-native-linuxapp-gcc compile environment you need to change it to SDK_TARGET=x86_64-native-linux-gcc.  
 
-In our test environment, we send packages using pktgen on node0. A DPDK l2fwd example are running in the docker container on node1.  
-
 1)Host setting:  
 ```bash
 git clone https://github.com/XinShuYang/Docker-DPDK.git  
@@ -40,4 +38,5 @@ sudo docker run -it --privileged -v /sys/bus/pci/drivers:/sys/bus/pci/drivers -v
 or  
 ```bash
 ./l2fwd.sh 
-```  
+```   
+In the test environment, I use pktgen to send packages on node0. A DPDK l2fwd example can running in the docker container on node1 and forward packages.  
