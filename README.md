@@ -12,15 +12,24 @@ sudo ./host_setup.sh.
 ``` 
 
 2)Build your docker image from the Dockerfile:  
+```bash
 sudo docker build -t docker-dpdk .  
+```  
 
 3)Build and run your container from this image:  
+```bash
 sudo docker run -it --privileged -v /sys/bus/pci/drivers:/sys/bus/pci/drivers -v /sys/kernel/mm/hugepages:/sys/kernel/mm/hugepages -v /sys/devices/system/node:/sys/devices/system/node -v /dev:/dev  docker-dpdk  bash  
+```  
 
 4)Compile the DPDK in the Container:  
+```bash
 ./container_setup.sh  
-
+```  
 5)Test examples:  
-./helloworld.sh  
+```bash
+./helloworld.sh
+```  
 or  
+```bash
 ./l2fwd.sh. 
+```  
