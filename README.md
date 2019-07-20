@@ -1,10 +1,16 @@
 # Docker-DPDK
+The basic idea to build DPDK in docker is to share host's devices and memory with the container.  
+If you want to use multiple dpdk containers with vhost driver. There are an official solution on https://doc.dpdk.org/guides-18.08/howto/virtio_user_for_container_networking.html.  
 
-First, make sure your DPDK examples can run on the host machine.
+First, make sure your DPDK examples can run on the host machine.  
 
-UIO driver binding and hugepage memory setting must be finished before building the container.
+UIO driver binding and hugepage memory setting must be finished before building the container.  
 
-In the test environment, there are two NICs bound to the igb_uio driver (port0,port1)
+In the test environment, there are two NICs bound to the igb_uio driver (container DPDK version:17.08)  
+You can use other version DPDK above 17.08  
+In DPDK19.05, if you choose to use x86_64-native-linuxapp-gcc compile environment you need to change it to SDK_TARGET=x86_64-native-linux-gcc.  
+
+In our test environment, we send packages using pktgen on node0. A DPDK l2fwd example are running in the docker container on node1.  
 
 1)Host setting:  
 ```bash
