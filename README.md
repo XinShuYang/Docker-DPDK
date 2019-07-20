@@ -4,6 +4,8 @@ First, make sure your DPDK examples can run on the host machine.
 
 UIO driver binding and hugepage memory setting must be finished before building the container.
 
+In the test environment, there are two NICs bound to the igb_uio driver (port0,port1)
+
 1)Host setting:  
 ```bash
 git clone https://github.com/XinShuYang/Docker-DPDK.git  
