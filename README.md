@@ -14,7 +14,7 @@ In DPDK19.05, if you choose to use x86_64-native-linuxapp-gcc compile environmen
 ```bash
 git clone https://github.com/XinShuYang/Docker-DPDK.git  
 cd Docker-DPDK  
-sudo ./host_setup.sh. 
+sudo ./host_setup.sh 
 ``` 
 
 2)Build your docker image from the Dockerfile:  
