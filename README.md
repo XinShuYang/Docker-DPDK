@@ -41,8 +41,8 @@ or
 ```   
 In the test environment, I use pktgen to send packages on node0. A DPDK l2fwd example can running in the docker container on node1 and forward packages.  
 
-```
-https://github.com/XinShuYang/Docker-DPDK/blob/master/l2.png
-```  
+
+![image]/l2.png
+  
 
 Reference: https://github.com/jeremyeder/docker-dpdk
