@@ -31,5 +31,5 @@ sudo docker run -it --privileged -v /sys/bus/pci/drivers:/sys/bus/pci/drivers -v
 ```  
 or  
 ```bash
-./l2fwd.sh. 
+./l2fwd.sh 
 ```  
